@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <Section class="container">
+        <div class="row">
+            <table id="table">
+                <tr>
+                    <th>Id</th>
+                    <th>Date de creation</th>
+                    <th>Etat</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Nom d'utilisateur</th>
+                    <th>Matricule</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+        </div>
+        <div class="row actions">
+            <button class="button" id="OpenModel">Ajouter utilisateur</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content row">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Ajouter utilisateur</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-column">
+                            <div class="input">
+                                <label for="fname">Nom</label>
+                                <input type="text" id="Nom" name="firstname">
+                            </div>
+                            <div class="input">
+                                <label for="fname">Prenom</label>
+                                <input type="text" id="Prenom" name="firstname">
+                            </div>
+                            <div class="input">
+                                <label for="fname">Etat</label>
+                                <select id="Etat">
+                                    <option value="pending">En validation</option>
+                                    <option value="rejected">Rejected</option>
+                                    <option value="valid">Valid</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="input">
+                                <label for="fname">Nom d'utilisateur</label>
+                                <input type="text" id="Username" name="firstname">
+                            </div>
+                            <div class="input">
+                                <label for="fname">Date de creation</label>
+                                <input type="datetime-local" id="CreationDate" name="firstname">
+                            </div>
+                        </div>
+                        <div class="form-column">
+                            <div class="input">
+                                <label for="fname">Matricule</label>
+                                <input type="text" id="Matricule" name="firstname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer actions">
+                        <button class="button" id="AddBtn">Ajouter utilisateur</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+</body>
+<script src="index.js" type="text/javascript"></script>
+
+</html>

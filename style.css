@@ -1,0 +1,157 @@
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+/* row */
+.row {
+  padding: 40px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+/* table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+/* actions */
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.button {
+  background-color: #fdb64d; /* Green */
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.button:active {
+  background-color: #ff9900;
+}
+/* etat */
+.etat {
+  padding: 8px 30px 8px 30px;
+  font-size: 16px;
+  border-radius: 7px;
+  text-align: center;
+}
+.etat-pending {
+  background-color: #fdb64d;
+}
+.etat-valide {
+  background-color: #5be881;
+}
+.etat-rejected {
+  background-color: #ff0000;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Header */
+.modal-header {
+  padding: 2px 16px;
+}
+
+/* Modal Body */
+.modal-body {
+  padding: 2px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-self: center;
+  gap: 10px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10%;
+  padding: 2px 16px;
+  width: 70%;
+}
+
+/* Modal Footer */
+.modal-footer {
+  padding: 2px 16px;
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* input */
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 10px;
+}
+
+input,
+select {
+  padding: 0.5em;
+  border: 1px solid rgba(22, 22, 22, 0.699);
+  border-radius: 4px;
+}
